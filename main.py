@@ -1,10 +1,7 @@
-# Representing the board as a 2D list with 7 rows and 6 columns. The board is actually represented sideways - when we print the board there's 7 columns and 6 rows. Encoding the board sideways will make adding a piece to a column much easier.
 def makethis_board():
     board = [[' ', ' ', ' ', ' ', ' ', ' '], [' ', ' ', ' ', ' ', ' ', ' '], [' ', ' ', ' ', ' ', ' ', ' '], [' ', ' ', ' ', ' ', ' ', ' '], [' ', ' ', ' ', ' ', ' ', ' '], [' ', ' ', ' ', ' ', ' ', ' '], [' ', ' ', ' ', ' ', ' ', ' ']]
     return board
 
-#board[0][5] = 'X'
-#board[5][5] = 'O'
 def print_board(board):
     header = ' '
     for num in range(1, len(board) + 1):
